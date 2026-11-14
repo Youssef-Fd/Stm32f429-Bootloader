@@ -1,40 +1,8 @@
 # STM32F429 Bootloader
 
-![MCU](https://img.shields.io/badge/MCU-STM32F429ZIT6-03234B?logo=stmicroelectronics&logoColor=white)
-![Core](https://img.shields.io/badge/Core-Cortex--M4F%20%40%20180%20MHz-blue)
-![IDE](https://img.shields.io/badge/IDE-STM32CubeIDE-39a9dc)
-![HAL](https://img.shields.io/badge/Framework-STM32%20HAL-orange)
-![Language](https://img.shields.io/badge/Language-C-lightgrey)
-
 A custom **bootloader** and a companion **demo application** for the **STM32F429I-Discovery** board. The bootloader occupies the first flash sectors, initializes the board, reports its status over UART, and then hands control to an independent application stored higher in flash by relocating the stack pointer and jumping to the application's reset handler.
 
 The project is meant as a clean, minimal foundation for building a full firmware-update bootloader (see the [Roadmap](#roadmap)).
-
----
-
-## Table of contents
-
-1. [Overview](#overview)
-2. [Features](#features)
-3. [System architecture](#system-architecture)
-4. [Flash memory map](#flash-memory-map)
-5. [Boot sequence](#boot-sequence)
-6. [How the jump to the application works](#how-the-jump-to-the-application-works)
-7. [Linker script and vector table configuration](#linker-script-and-vector-table-configuration)
-8. [Hardware and pinout](#hardware-and-pinout)
-9. [Clock configuration](#clock-configuration)
-10. [Peripherals](#peripherals)
-11. [Repository structure](#repository-structure)
-12. [Getting started](#getting-started)
-13. [Expected serial output](#expected-serial-output)
-14. [Debugging](#debugging)
-15. [Troubleshooting](#troubleshooting)
-16. [Known limitations](#known-limitations)
-17. [Roadmap](#roadmap)
-18. [Notes and licensing](#notes-and-licensing)
-19. [Author](#author)
-
----
 
 ## Overview
 
