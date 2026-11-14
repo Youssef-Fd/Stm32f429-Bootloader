@@ -2,7 +2,7 @@
 
 A custom **bootloader** and a companion **demo application** for the **STM32F429I-Discovery** board. The bootloader occupies the first flash sectors, initializes the board, reports its status over UART, and then hands control to an independent application stored higher in flash by relocating the stack pointer and jumping to the application's reset handler.
 
-The project is meant as a clean, minimal foundation for building a full firmware-update bootloader (see the [Roadmap](#roadmap)).
+The project is meant as a clean, minimal foundation for building a full firmware-update bootloader.
 
 ## Overview
 
